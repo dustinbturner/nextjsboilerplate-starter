@@ -7,6 +7,7 @@ A modern, feature-rich Next.js boilerplate with Supabase authentication, Shadcn/
 - ⚡ Next.js 15 with App Router & React 19
 - 🔐 Supabase Authentication
 - 🎨 Shadcn/UI Components
+- 📧 Resend Email Integration
 - 🌟 TypeScript Support
 - 📱 Responsive Design
 - 🔄 State Management
@@ -36,7 +37,7 @@ pnpm install
 ```bash
 cp .env.example .env
 ```
-Then update the `.env` file with your Supabase credentials.
+Then update the `.env` file with your Supabase credentials and Resend API key.
 
 4. Start the development server:
 ```bash
@@ -48,6 +49,17 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Email Setup with Resend
+
+1. Sign up for a [Resend](https://resend.com) account
+2. Get your API key from the Resend dashboard
+3. Add your API key to the `.env` file:
+```bash
+RESEND_API_KEY=your_resend_api_key
+```
+
+The template includes a pre-configured email API route at `src/app/api/send/route.ts` and a sample email template at `src/components/email-template.tsx`. You can customize these files to match your email needs.
 
 ### Project Structure
 
