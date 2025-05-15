@@ -4,7 +4,7 @@ A modern, feature-rich Next.js boilerplate with Supabase authentication, Shadcn/
 
 ## Features
 
-- ⚡ Next.js 14 with App Router
+- ⚡ Next.js 15 with App Router & React 19
 - 🔐 Supabase Authentication
 - 🎨 Shadcn/UI Components
 - 🌟 TypeScript Support
