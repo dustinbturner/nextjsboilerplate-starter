@@ -1,24 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Boilerplate Starter
+
+A modern, feature-rich Next.js boilerplate with Supabase authentication, Shadcn/UI components, and TypeScript support. This template provides a solid foundation for building full-stack web applications.
+
+## Features
+
+- ⚡ Next.js 14 with App Router
+- 🔐 Supabase Authentication
+- 🎨 Shadcn/UI Components
+- 🌟 TypeScript Support
+- 📱 Responsive Design
+- 🔄 State Management
+- 🎯 ESLint & Prettier
+- 🚀 Production-ready
 
 ## Getting Started
 
-First, run the development server:
+### Setup
 
+1. Clone this repository:
+```bash
+git clone https://github.com/dustinbturner/nextjsboilerplate-starter.git my-project
+cd my-project
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Set up environment variables:
+```bash
+cp .env.example .env
+```
+Then update the `.env` file with your Supabase credentials.
+
+4. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/                # Next.js App Router pages
+├── public/            # Static assets
+├── src/
+│   ├── components/    # React components
+│   ├── hooks/         # Custom hooks
+│   └── lib/           # Utility functions and configurations
+└── types/             # TypeScript type definitions
+```
 
 ## Learn More
 
